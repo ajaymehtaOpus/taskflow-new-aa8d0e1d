@@ -6,7 +6,7 @@
     "dev": "nodemon src/index.js",
     "test": "jest",
     "build": "echo 'No build step defined.'",
-    "migrate": "psql -U your_user -d your_database -f migrations/001_init.sql"
+    "migrate": "node src/migrations/migrate.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
